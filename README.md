@@ -1,4 +1,4 @@
-# PLEASE DO NOT JUDGE ME ON THE CODE !
+## PLEASE DO NOT JUDGE ME ON THE CODE !
 
 I did this deminor a long time ago, I was very unexperimented, and I didn't do most of basic stability checks (malloc's return for instance) because i just wanted to do it fast.
 
@@ -6,7 +6,9 @@ I coded this without IDE, with only a VI (not VIM, VI) without any configuration
 
 So please, if you are looking for clear and clean code, go to look at another repository.
 
-Else, please compile and run my deminor:
+Else, you can compile and run my deminor.
+
+### Synopsis
 
     gcc *.c -o deminor
     ./deminor [width=X] [height=X] [mines=X]
@@ -17,3 +19,17 @@ Else, please compile and run my deminor:
 
 Note that mines will be generated on your first tile selection, so you cannot lose on first click.
 
+
+### Commands
+
+Use [Z] on a tile when you are sure there is no mine on a tile.  
+If you were wrong, that's bad for you. Else, the tile will reveal, and if there are no close mine, every bounded tile will reveal too.
+
+Use [X] on a tile when you think there is a mine. It will write a '!' on it, and forbid you to reveal it by accident with [Z].  
+Use [X] again on a mine-marked tile to unselect it and reset it as unknow tile.
+
+
+### Win
+
+Note that this is not a finished game: if you reveal the entire board, nothing will happen.
+At least you can have a personal satisfaction, or take a screenshot of your terminal to boast besides your friends.
