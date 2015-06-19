@@ -8,9 +8,22 @@ So please, if you are looking for clear and clean code, go to look at another re
 
 Else, you can compile and run my deminor.
 
+
+### Compilation & Installation
+
+To locally compile the program, and allow you to test it, you just have to make it:
+
+    make
+
+If you have strange tastes and get addicted to it, you can install it on your machine to start another game whenever and wherever you want:
+
+    make install
+
+It will only take 20 ko of memory on your computer. So do it without remorse.
+
+
 ### Synopsis
 
-    gcc *.c -o deminor
     ./deminor [width=X] [height=X] [mines=X]
 
  - `width` will set col numbers.
