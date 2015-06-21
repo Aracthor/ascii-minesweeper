@@ -1,0 +1,54 @@
+.Dd	$\&Mdocdate$
+.Dt	ASCII-DEMINOR(6)
+.\"
+.Sh	NAME
+.Nm	ascii-deminor
+.Nd	A deminor game runnable in terminal, playable with keyboard.
+.\"
+.Sh	SYNOPSIS
+.Nm
+.Op width= Ns Em width
+.Op height= Ns Em height
+.Op mines= Ns Em mines_number
+.\"
+.Sh	DESCRIPTION
+This manual page define briefly the
+.Sy ascii-deminor
+command. As it names let guess, it is a deminor game played only with keyboard, in terminal, and drawn with characters. And without sound.
+.Pp
+So yes, it's pretty tacky. But it still can be usefull if you need more games in your computer without enough disk space for big ones.
+.\"
+.Sh	OPTIONS
+.Sy width
+.Dl Change tiles number on each line.
+.Dl By default, width is set to 20.
+.Pp
+.Sy height
+.Dl Change tiles number on each column.
+.Dl By default, height is set to 10.
+.Pp
+.Sy mines
+.Dl Change total mines number on grid.
+.Dl By default, mines is set to 30.
+.\"
+.Sh	USAGE
+This text is taken verbatim from the Readme file.
+.Pp
+Use
+.Sy Z
+on a tile when you are sure there is no mine on a tile. If you were wrong, that's bad for you. Else, the tile will reveal, and if there are no close mine, every bounded tile will reveal too.
+.Pp
+Use
+.Sy X
+on a tile when you think there is a mine. It will write a '!' on it, and forbid you to reveal it by accident with
+.Sy Z
+if you tremble. Use
+.Sy X
+again on a mine-marked tile to unselect it and reset it as unknow tile.
+.Pp
+Use
+.Sy escape
+to quit or ragequit the game.
+.\"
+.Sh     AUTHORS
+Written by Vivien Bonnet.

@@ -5,16 +5,21 @@
 ## Login   <aracthor@epitech.net>
 ## 
 ## Started on  Fri Jun 19 10:46:13 2015 Aracthor
-## Last Update Fri Jun 19 10:53:29 2015 Aracthor
+## Last Update Sun Jun 21 17:43:29 2015 Aracthor
 ##
 
 CC=	gcc
 
 RM=	rm -f
 
+MKDIR=	mkdir
+
 INSTALL=install
 
-PREFIX=	/usr/local
+PREFIX=		/usr/local
+BIN_DIR=	$(PREFIX)/bin
+MAN_DIR=	$(PREFIX)/man
+MAN_SUBDIR=	$(MAN_DIR)/man6
 
 
 NAME=	ascii-deminor
@@ -31,6 +36,8 @@ SRCS=	coord.c		\
 
 OBJS=	$(SRCS:%.c=%.o)
 
+MAN=	man/ascii-deminor.6
+
 
 CFLAGS=	-Wall -Werror -Wextra	\
 	-ansi -pedantic		\
@@ -43,6 +50,9 @@ LDFLAGS=-o $(NAME)
 $(NAME):	$(OBJS)
 		$(CC) $(OBJS) $(LDFLAGS)
 
+$(MAN_SUBDIR):
+		$(MKDIR) $(MAN_SUBDIR)
+
 all:		$(NAME)
 
 clean:
@@ -51,7 +61,8 @@ clean:
 fclean:		clean
 		$(RM) $(NAME)
 
-install:	$(NAME)
-		$(INSTALL) -m 0755 $(NAME) $(PREFIX)/bin
+install:	$(NAME) $(MAN_SUBDIR)
+		$(INSTALL) -m 0755 $(NAME) $(BIN_DIR)
+		$(INSTALL) -m 0644 $(MAN) $(MAN_SUBDIR)
 
 re:		fclean all
