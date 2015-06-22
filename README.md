@@ -8,6 +8,8 @@ So please, if you are looking for clear and clean code, go to look at another re
 
 Else, you can compile and run my minesweeper.
 
+![Screenshot](./images/screenshot.png?raw=true "Screenshot")
+
 
 ### Compilation & Installation
 
