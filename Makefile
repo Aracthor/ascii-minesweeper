@@ -5,7 +5,7 @@
 ## Login   <aracthor@epitech.net>
 ## 
 ## Started on  Fri Jun 19 10:46:13 2015 Aracthor
-## Last Update Sun Jun 21 17:43:29 2015 Aracthor
+## Last Update Mon Jun 22 14:25:45 2015 Aracthor
 ##
 
 CC=	gcc
@@ -22,7 +22,7 @@ MAN_DIR=	$(PREFIX)/man
 MAN_SUBDIR=	$(MAN_DIR)/man6
 
 
-NAME=	ascii-deminor
+NAME=	ascii-minesweeper
 
 SRCS=	coord.c		\
 	cursor.c	\
@@ -36,7 +36,7 @@ SRCS=	coord.c		\
 
 OBJS=	$(SRCS:%.c=%.o)
 
-MAN=	man/ascii-deminor.6
+MAN=	man/ascii-minesweeper.6
 
 
 CFLAGS=	-Wall -Werror -Wextra	\
