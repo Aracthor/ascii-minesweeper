@@ -37,13 +37,13 @@ Note that mines will be generated on your first tile selection, so you cannot lo
 
 ### Usage
 
-Use [Z] on a tile when you are sure there is no mine on a tile.  
+Use **Z** on a tile when you are sure there is no mine on a tile.  
 If you were wrong, that's bad for you. Else, the tile will reveal, and if there are no close mine, every bounded tile will reveal too.
 
-Use [X] on a tile when you think there is a mine. It will write a '!' on it, and forbid you to reveal it by accident with [Z] if you tremble.
-Use [X] again on a mine-marked tile to unselect it and reset it as unknow tile.
+Use **X** on a tile when you think there is a mine. It will write a '!' on it, and forbid you to reveal it by accident with **Z** if you tremble.
+Use **X** again on a mine-marked tile to unselect it and reset it as unknow tile.
 
-Use [escape] to quit or ragequit the game.
+Use **escape** to quit or ragequit the game.
 
 
 ### Win
