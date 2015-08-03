@@ -21,7 +21,7 @@ get_arg(char *arg, struct s_grid *grid)
     params[1] = "height";
     params[2] = "mines";
 
-    if ((ptr = strstr(arg, "=")) != NULL) {
+    if (ptr = strstr(arg, "=")) {
         *ptr = '\0';
         for (i = 0; i < PARAMS_NBR; ++i)
             if (!strcmp(params[i], arg)) {
@@ -55,7 +55,7 @@ create_grid(int argc, char **argv, struct s_grid *grid)
     grid->mines_selected = 0;
 
     for (i = 1; i < argc; ++i)
-    if (get_arg(strdup(argv[i]), grid) != 0)
+    if (get_arg(strdup(argv[i]), grid))
         valid = false;
 
     if (grid->longer * grid->width - 1 <= grid->mines)
